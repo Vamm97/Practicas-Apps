@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:#1e1f33;
+    margin: 0;
+   
+}
+
+
+header{
+    background-color: #292847;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid #2f2f50;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.search::placeholder{
+    color: #c6cafd;
+}
+
+.search:focus{
+    outline:none;
+    background-color:  #7076c9;;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.peliculas{
+    position: relative;
+    background-color: #292847;
+    color: white;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    margin: 1rem;
+    width: 250px;
+
+}
+
+.peliculas img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.pelicula-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1.5px;
+}
+
+.pelicula-info h3{
+    margin: 0;
+}
+
+.pelicula-info span{
+    background-color: #1e1f33;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.pelicula-info span.green{
+    color: rgb(0, 255, 0);
+}
+
+.pelicula-info span.orange{
+    color: orange;
+}
+
+.pelicula-info span.red{
+    color: red;
+}
+
+.overview{
+    color: black;
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3{
+    margin-top: 0;
+}
+
+.peliculas:hover .overview{
+    transform: translateY(0);
+}

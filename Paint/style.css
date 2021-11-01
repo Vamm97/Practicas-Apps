@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+canvas{
+    border: 1px solid black;
+   
+}
+
+.toolbox{
+    background-color: rgb(86, 0, 94);
+    border: 1px solid black;
+    width: 803px;
+    display: flex;
+    padding: 1rem;
+}
+
+.toolbox > *{
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    height: 50px;
+    margin: 0.25rem;
+    width: 50px;
+    cursor: pointer;
+}
+
+.toolbox >*:last-child{
+    margin-left: auto;
+    cursor: pointer;
+
+}

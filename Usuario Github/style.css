@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 34%, 
+    rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: #6ca0f5;
+}
+
+input{
+    border: 1px solid #be91f2;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 34%, 
+    rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    font-family: inherit;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+input::placeholder{
+    color:#bbb;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.card{
+    background-color: #1a1b27;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: -1px 1px 12px 11px rgba(0,0,0,0.32);
+    -webkit-box-shadow: -1px 1px 12px 11px rgba(0,0,0,0.32);
+    -moz-box-shadow: -1px 1px 12px 11px rgba(0,0,0,0.32);
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.avatar{
+    border: 5px solid;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+
+.user-info{
+    margin-left: 2rem;
+    color: #6ca0f5;
+}
+
+.userinfo h2{
+margin-top: 0;
+}
+
+.user-info ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+
+}
+.user-info ul li{
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.repo{
+    background-color: #2a2a72;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.25rem 0.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+h4{
+    color: #38bcad;
+}

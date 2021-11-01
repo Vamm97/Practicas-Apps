@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generador Contraseñas</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="Contenedor-pw">
+            <div class="Cabeza">
+                <div class="pw">
+                    <span id="pw"></span>
+                <button id="copiar">Copiar</button>
+            </div>   
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="len">
+                        Largo de Contraseña
+                    </label>
+                    <input id="len"
+                    value="20" 
+                    type="number" min="4" max="40">
+                </div>
+                <div class="form-control">
+                    <label for="upper">
+                        Contiene Mayusculas
+                    </label>
+                    <input id="upper" 
+                    type="checkbox">
+                </div>
+                <div class="form-control">
+                    <label for="lower">
+                        Contiene Minusculas
+                    </label>
+                    <input id="lower" 
+                    type="checkbox">
+                </div>
+                <div class="form-control">
+                    <label for="number">
+                        Contiene Numeros
+                    </label>
+                    <input id="number" 
+                    type="checkbox">
+                </div>
+                <div class="form-control">
+                    <label for="symbol">
+                        Contienen Simbolos
+                    </label>
+                    <input id="symbol" 
+                    type="checkbox">
+                </div>
+                <button class="generate" id="generate">
+                    Generar Password
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

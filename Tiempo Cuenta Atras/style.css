@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    min-height: 100vh;
+    margin: 0;
+}
+    .Contador{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1{
+        font-weight: normal;
+        font-size: 4rem;
+        margin-top: 10rem;
+        
+    }
+
+    .big-text{
+        font-weight: bold;
+        font-size: 6rem;
+        line-height: 1;
+        margin: 1rem 2rem;
+    }
+    
+    .Tiempos-t{
+        text-align: center;
+    }
+
+    .Tiempos-t span{
+        font-size: 1.3rem;
+    }
